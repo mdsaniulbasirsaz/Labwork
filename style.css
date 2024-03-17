@@ -1,0 +1,293 @@
+/* Navigation */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    align-items: center;
+   box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+}
+
+nav img{
+    width:150px;
+    cursor: pointer;
+}
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+nav .navigation ul li{
+   list-style: none;
+   margin-left: 30px;
+   font-style: bold;
+
+}
+nav .navigation ul li a{
+   text-decoration: none;
+   color:rgb(21,21,100);
+   font-size: 16px;
+   font-weight: 500;
+   font-style: bold;
+   transition: 0.3s ease;
+ 
+ }
+
+ nav .navigation ul li a:hover{
+    color:rgb(248, 158, 3) ;
+
+ }
+ .tomato-button {
+  background-color: rgb(249, 160, 7);
+  border: 2px solid rgb(249, 160, 7); /* Added border */
+  color: white;
+  padding: 8px 20px; /* Adjusted padding for more spacing */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px; /* Increased border radius for a more rounded look */
+  transition: all 0.3s ease; /* Added transition for smoother hover effect */
+}
+
+.tomato-button:hover {
+  background-color: white;
+  color: rgb(249, 160, 7);
+}
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .tomato-button {
+        padding: 8px 8px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .tomato-button {
+        padding: 6px 6px;
+        font-size: 12px;
+    }
+}
+
+/*Home*/
+#home {
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("physics.jpg");
+    width:100%;
+    height: 70vh;
+    background-size:cover ;
+    background-position:center ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#home h1{
+    color:white;
+    font-size: 2.2rem;
+
+}
+#home p{
+    color:white;
+    font-size: 20px;
+    border-bottom: 10px;
+
+}
+.btn {
+  display: flex;
+  justify-content: space-between;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.btn a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  margin: 0 7px;
+}
+
+.blue {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.yellow {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.btn a:hover {
+  opacity: 0.8;
+}
+
+.blue {
+    background-color: rgb(248, 182, 2);
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.yellow {
+    background-color: rgb(96, 3, 247);
+    color: rgb(244, 241, 241);
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#courses h2{
+    color:blueviolet;
+    font-size: 2rem;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  *{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear ;
+  }
+
+  .container{
+    background: linear-gradient(45deg,rgb(239, 237, 240),rgb(255, 255, 255));
+    padding: 15px 9%;
+    padding-bottom: 120px;
+
+  }
+  .container .heading{
+    text-align:center;
+    padding-bottom: 15px;
+    color:rgb(115, 0, 230);
+    text-shadow: 0 5px 10px rgbs(0,0,0,.2);
+    font-size: 50px;
+  }
+
+  .container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap:15px
+
+  }
+
+
+.container .box-container.box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background-color:#fff ;
+    text-align: center;
+    padding: 30px 20px;
+}
+.container .box-container .box img{
+    width:100%;
+    height: 80hv;
+}
+
+.container .box-container .box h3{
+    color:#444;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+.container .box-container .box p{
+    color:#777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.container .box-container .box .btn1{
+         display: block;
+        width: fit-content; /* Adjust width as needed */
+        margin: 0 auto; /* Center horizontally */
+        text-align: center; /* Center text within button */
+        padding: 10px 15px; /* Adjust padding as needed */
+        background-color: #f4ac02; /* Button background color */
+        color: #fff; /* Button text color */
+        text-decoration: none; /* Remove default underline */
+        border: none; /* Remove default button border */
+        border-radius: 5px; 
+}
+
+.container .box-container .box .btn1:hover{
+    letter-spacing: 1px;
+}
+
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
+
+.achivement h2{
+  color:blueviolet;
+  font-size: 3rem;
+  text-align: center;
+}
+.achivement p{
+  color:rgb(22, 1, 1);
+  font-size: 20px;
+  border-bottom: 10px;
+  
+}
